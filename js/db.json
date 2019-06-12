@@ -1,0 +1,532 @@
+var Lista;
+Lista = [
+{ 
+	"Lista1": [
+    [
+      "1",
+      "103855",
+      "PROY__CLOUD-LA POSITIVA-SERVICIOS GESTIONADOS DE TI Y CLOUD",
+      "BALBUENA GAMARRA JAVIER",
+      "954988729"
+    ],
+    [
+      "2",
+      "101719",
+      "PROY__CLOUD - ESAN - HOSTING SAP",
+      "CAHUANA JUAREZ FIORELA DEL ROCIO",
+      "942119161"
+    ],
+    [
+      "3",
+      "103103",
+      "PROY__CLOUD-LINDLEY-HOUSIN Y HOSTING",
+      "CAHUANA JUAREZ FIORELA DEL ROCIO",
+      "942119161"
+    ],
+    [
+      "4",
+      "103212",
+      "PROY__CLOUD-KOMATSU-OUTSOURCING DATA CENTER",
+      "CAHUANA JUAREZ FIORELA DEL ROCIO",
+      "942119161"
+    ],
+    [
+      "5",
+      "103963",
+      "PROY__CLOUD-VISANET-ADM CLOUD",
+      "CAHUANA JUAREZ FIORELA DEL ROCIO",
+      "942119161"
+    ],
+    [
+      "6",
+      "103971",
+      "PROY__CLOUD-REDONDOS-SAP HANA 4",
+      "CAHUANA JUAREZ FIORELA DEL ROCIO",
+      "942119161"
+    ],
+    [
+      "7",
+      "100040",
+      "PROY__CLOUD-G&M-SERVICIO DE CLOUD PRIVADO",
+      "CASANOVA JIJON DANTE ORLANDO",
+      "998091412"
+    ],
+    [
+      "8",
+      "100071",
+      "PROY__CLOUD-GMP-OUT",
+      "CASANOVA JIJON DANTE ORLANDO",
+      "998091412"
+    ],
+    [
+      "9",
+      "101500",
+      "PROY__CLOUD-G&M-SERVICIO DE BACKBONE",
+      "CASANOVA JIJON DANTE ORLANDO",
+      "998091412"
+    ],
+    [
+      "10",
+      "101689",
+      "PROY__CLOUD-CAM-SERVICIO CORREO/AD",
+      "CASANOVA JIJON DANTE ORLANDO",
+      "998091412"
+    ],
+    [
+      "11",
+      "103076",
+      "PROY__CLOUD-GRAM-SERVICIO ORACLE BD-EBS",
+      "CASANOVA JIJON DANTE ORLANDO",
+      "998091412"
+    ],
+    [
+      "12",
+      "100043",
+      "PROY__CLOUD-MINERA BATEAS-HOSTING",
+      "CHIPANA GAMARRA  JHOSELYN BEATRIZ",
+      "958948038"
+    ],
+    [
+      "13",
+      "103267",
+      "PROY__CLOUD-GRUPO SANDOVAL-HOSTING ADMINISTRADO SAP",
+      "CHIPANA GAMARRA  JHOSELYN BEATRIZ",
+      "958948038"
+    ],
+    [
+      "14",
+      "103496",
+      "PROY__CLOUD-SAN FERNANDO-CLOUD/HOUSING",
+      "CHIPANA GAMARRA  JHOSELYN BEATRIZ",
+      "958948038"
+    ],
+    [
+      "15",
+      "100988",
+      "PROY__CLOUD-UNICON-HOST PLATAFOR",
+      "DEL CARPIO CALDERON ISRAEL ANGEL",
+      "975518847"
+    ],
+    [
+      "16",
+      "103103",
+      "PROY__CLOUD-LINDLEY-HOUSIN Y HOSTING",
+      "DEL CARPIO CALDERON ISRAEL ANGEL",
+      "975518847"
+    ],
+    [
+      "17",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1",
+      "DEL CARPIO CALDERON ISRAEL ANGEL",
+      "975518847"
+    ],
+    [
+      "18",
+      "101247",
+      "PROY__CLOUD-OPTICAL-DATA CENTER",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "19",
+      "101601",
+      "ASOP__GAF-CANVIA-SERVICIOS CLOUD",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "20",
+      "103114",
+      "PROY__CLOUD-AZTECA-HOUSING 6RU",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "21",
+      "103166",
+      "PROY__CLOUD-TRADITION-HOUSING",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "22",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1 (del 17/06 al 01/07)",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "23",
+      "103474",
+      "PROY__CLOUD-BLOOMBERG-HOUSING",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "24",
+      "Varios",
+      "PROYECTOS VARIOS DS, BO, GSD",
+      "ESPINOZA OCAÑA LUIS ANGEL",
+      "980267498"
+    ],
+    [
+      "25",
+      "100040",
+      "PROY__CLOUD-G&M-SERVICIO DE CLOUD PRIVADO",
+      "FELIPA SANCHEZ SANDRA VIRGILIA",
+      "996197186"
+    ],
+    [
+      "26",
+      "101426",
+      "PROY__CLOUD-G&M-SERVICIO DE CORREO/AD",
+      "FELIPA SANCHEZ SANDRA VIRGILIA",
+      "996197186"
+    ],
+    [
+      "27",
+      "101500",
+      "PROY__CLOUD-G&M-SERVICIO DE BACKBONE",
+      "FELIPA SANCHEZ SANDRA VIRGILIA",
+      "996197186"
+    ],
+    [
+      "28",
+      "103352",
+      "PROY__CLOUD-CAM PERU-SERVICIO DE CLOUD",
+      "FELIPA SANCHEZ SANDRA VIRGILIA",
+      "996197186"
+    ],
+    [
+      "29",
+      "103704",
+      "PROY__CLOUD-STRACON-SERVICIO DE CAPACIDADES CLOUD",
+      "FELIPA SANCHEZ SANDRA VIRGILIA",
+      "996197186"
+    ],
+    [
+      "30",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1",
+      "GARCIA VILLALTA MILAGRITOS",
+      "981959391"
+    ],
+    [
+      "31",
+      "100027",
+      "PROY__CLOUD-UNIBANCA-COT",
+      "INGA PEREZ JOSE ANTONIO",
+      "949508589"
+    ],
+    [
+      "32",
+      "100880",
+      "PROY__CLOUD-MARATHON-HOSTING",
+      "INGA PEREZ JOSE ANTONIO",
+      "949508589"
+    ],
+    [
+      "33",
+      "101841",
+      "PROY_CLOUD-GANADERA SANTA ELENA-HOSTING SAP",
+      "INGA PEREZ JOSE ANTONIO",
+      "949508589"
+    ],
+    [
+      "34",
+      "103879",
+      "PROY__CLOUD-EL COMERCIO-AZURE",
+      "INGA PEREZ JOSE ANTONIO",
+      "949508589"
+    ],
+    [
+      "35",
+      "103883",
+      "PROY__CLOUD-AVANSYS-AZURE",
+      "INGA PEREZ JOSE ANTONIO",
+      "949508589"
+    ],
+    [
+      "36",
+      "100069",
+      "PROY__CLOUD-NAP PERU",
+      "JIBAJA AGUILAR IVAN CARLOS",
+      "988649581"
+    ],
+    [
+      "37",
+      "101514",
+      "PROY__CLOUD-MODASA-HOSTING SAP ALL",
+      "JIBAJA AGUILAR IVAN CARLOS",
+      "988649581"
+    ],
+    [
+      "38",
+      "101566",
+      "PROY__CLOUD - PETRAMAS - HOSTING SAP",
+      "JIBAJA AGUILAR IVAN CARLOS",
+      "988649581"
+    ],
+    [
+      "39",
+      "103165",
+      "PROY__CLOUD-ZRIX-TRASLADO ALOJAMIENTO CENTRO DE PROCESAM DATOS",
+      "JIBAJA AGUILAR IVAN CARLOS",
+      "988649581"
+    ],
+    [
+      "40",
+      "103842",
+      "PROY__CLOUD-SUNARP-HOUSING Y HOSTING",
+      "JIBAJA AGUILAR IVAN CARLOS",
+      "988649581"
+    ],
+    [
+      "41",
+      "101514",
+      "PROY__CLOUD-MODASA-HOSTING SAP ALL",
+      "LINDO FLORES MIRIAN MILAGROS",
+      "951200788"
+    ],
+    [
+      "42",
+      "103011",
+      "PROY__CLOUD-BANCO CENCOSUD-SERVICIOS CLOUD",
+      "LINDO FLORES MIRIAN MILAGROS",
+      "951200788"
+    ],
+    [
+      "43",
+      "103107",
+      "PROY__CLOUD-ACEROS AREQUIPA-OUTSOURCING DATACENTER",
+      "LINDO FLORES MIRIAN MILAGROS",
+      "951200788"
+    ],
+    [
+      "44",
+      "103212",
+      "PROY__CLOUD-KOMATSU-OUTSOURCING DATA CENTER",
+      "LINDO FLORES MIRIAN MILAGROS",
+      "951200788"
+    ],
+    [
+      "45",
+      "103855",
+      "PROY__CLOUD-LA POSITIVA-SERVICIOS GESTIONADOS DE TI Y CLOUD",
+      "MARQUEZ VILELA DIEGO",
+      "954689526"
+    ],
+    [
+      "46",
+      "103517",
+      "PROY__CLOUD-ONP-CENTRO DE COMPUTO Y COMUNICACIONES 2017",
+      "MELCHOR ANGELES MIGUEL ANGEL",
+      "985604312"
+    ],
+    [
+      "47",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1",
+      "MORALES TERAN DANNY",
+      "s/n"
+    ],
+    [
+      "48",
+      "100988",
+      "PROY__CLOUD-UNICON-HOST PLATAFOR",
+      "PEZO CASTAÑEDA RONALD PAUL",
+      "953549733"
+    ],
+    [
+      "49",
+      "103267",
+      "PROY__CLOUD-GRUPO SANDOVAL-HOSTING ADMINISTRADO SAP",
+      "PEZO CASTAÑEDA RONALD PAUL",
+      "953549733"
+    ],
+    [
+      "50",
+      "103107",
+      "PROY__CLOUD-ACEROS AREQUIPA-OUTSOURCING DATACENTER",
+      "PINTO BARREDA JOHANNA",
+      "s/n"
+    ],
+    [
+      "51",
+      "103855",
+      "PROY__CLOUD-LA POSITIVA-SERVICIOS GESTIONADOS DE TI Y CLOUD",
+      "QUISPE MEJIA CRISTOPHER PAULO",
+      "962719312"
+    ],
+    [
+      "52",
+      "100899",
+      "PROY__CLOUD-PROSEGUR-SITE CONTIN",
+      "RAMIREZ PEÑA DEVIS",
+      "947606076"
+    ],
+    [
+      "53",
+      "101593",
+      "PROY__CLOUD - BELLTECH - PR DATACENTER",
+      "RAMIREZ PEÑA DEVIS",
+      "947606076"
+    ],
+    [
+      "54",
+      "103532",
+      "PROY__CLOUD-HOJA REDONDA-SERVICIO DE IAAS",
+      "RAMIREZ PEÑA DEVIS",
+      "947606076"
+    ],
+    [
+      "55",
+      "103621",
+      "PROY__CLOUD-LAIVE-OUTSOURCING - HOSTING SAP HANA",
+      "RAMIREZ PEÑA DEVIS",
+      "947606076"
+    ],
+    [
+      "56",
+      "103745",
+      "PROY__CLOUD-BCP-SUPERVISION DE RENOVACION TECNOLOGICA",
+      "RAMIREZ PEÑA DEVIS",
+      "947606076"
+    ],
+    [
+      "57",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1",
+      "RAMIREZ URBANO JUAN CARLOS",
+      "999857754"
+    ],
+    [
+      "58",
+      "103168",
+      "PROY__CLOUD-FONAFE-CENTRO DE DATOS CORPORATIVO FASE 1",
+      "RICALDE VALVERDE CAROL DIANA",
+      "938509642"
+    ],
+    [
+      "59",
+      "103517",
+      "PROY__CLOUD-ONP-CENTRO DE COMPUTO Y COMUNICACIONES 2017",
+      "RODRIGUEZ MONTERO CESAR ENRIQUE",
+      "998629031"
+    ],
+    [
+      "60",
+      "100027",
+      "PROY__CLOUD-UNIBANCA-COT",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "61",
+      "100043",
+      "PROY__CLOUD-MINERA BATEAS-HOSTING",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "62",
+      "100069",
+      "PROY__CLOUD-NAP PERU",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "63",
+      "103011",
+      "PROY__CLOUD-BANCO CENCOSUD-SERVICIOS CLOUD",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "64",
+      "103050",
+      "PROY__CLOUD-CHIMU AGROPECUARIA-HOSTING ADMINISTRADO",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "65",
+      "103496",
+      "PROY__CLOUD-SAN FERNANDO-CLOUD/HOUSING",
+      "RUIZ HURTADO JORGE DIEGO",
+      "943205547"
+    ],
+    [
+      "66",
+      "100043",
+      "PROY__CLOUD-MINERA BATEAS-HOSTING",
+      "SALINAS PARI DANIEL ",
+      "939185872"
+    ],
+    [
+      "67",
+      "101453",
+      "PROY__CLOUD-LAP-HOSTING SAP",
+      "SALINAS PARI DANIEL ",
+      "939185872"
+    ],
+    [
+      "68",
+      "101764",
+      "PROY__CLOUD-LAP-RED GIGABIT",
+      "SALINAS PARI DANIEL ",
+      "939185872"
+    ],
+    [
+      "69",
+      "103948",
+      "PROY__CLOUD-EUROMOTORS-OUTSOURCING",
+      "SALINAS PARI DANIEL ",
+      "939185872"
+    ],
+    [
+      "70",
+      "103123",
+      "PROY__CLOUD-SEDAPAL-DATA CENTER",
+      "SANCHEZ CUBAS JOSE LUIS",
+      "945273150"
+    ],
+    [
+      "71",
+      "100038",
+      "PROY__CLOUD-BBVA-OPE PRODUCCION",
+      "SOTO JULCA, MIGUEL ANGEL",
+      "996638352"
+    ],
+    [
+      "72",
+      "103346",
+      "PROY__CLOUD-SBS-SERVICIO DE TRASLADO Y ALQUILER DE ALOJAMIENTO",
+      "SOTO JULCA, MIGUEL ANGEL",
+      "996638352"
+    ],
+    [
+      "73",
+      "100040",
+      "PROY__CLOUD-G&M-SERVICIO DE CLOUD PRIVADO",
+      "ZUÑIGA ANTICONA BIBI MALU",
+      "942952415"
+    ],
+    [
+      "74",
+      "101426",
+      "PROY__CLOUD-G&M-SERVICIO DE CORREO/AD",
+      "ZUÑIGA ANTICONA BIBI MALU",
+      "942952415"
+    ],
+    [
+      "75",
+      "103352",
+      "PROY__CLOUD-CAM PERU-SERVICIO DE CLOUD",
+      "ZUÑIGA ANTICONA BIBI MALU",
+      "942952415"
+    ]
+  ]
+}
+]

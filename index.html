@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/ico" href="img/jp2.ico" />
+	<title>Jefe de Proyecto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+
+	<!-- ANIMACON CON ANMATE.CSS    -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--ARCHIBO DE BD JSON-->
+	<script language=javascript type="text/javascript" src="js/db.json"></script>
+
+
+	<!-- ALERTAS DE ALERTIFY.JS  -->
+	<link rel="stylesheet" type="text/css" href="css/alertify.min.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<script type="text/javascript" src="js/alertify.min.js"></script>
+	<script type="text/javascript" src="js/misAlertas.js"></script>
+ 
+</head>
+<body>
+
+	<div class="container mt-4 mb-4 h-100">
+
+		<div class="row pt-4 pr-4 pl-4">
+			
+			<div class="col-12 text-center animated slideInUp">
+				<img src="img/jp2.ico" height="40" width="40" class="animated infinite pulse">
+				<strong class="titulo" style="font-size:2.2em; color: #FF9A50;"><i style="color:white;">___</i>JEFES DE PROYECTOS<i style="color:white;">___</i><i class="fas fa-user-lock"></i></strong>
+			</div>
+
+			<div class="col-2 mb-2 text-right">
+				<img src="img/canvia.png" height="45" width="150">
+			</div>
+
+			<div class="col-8 ml-4 mb-2">
+				<div class="input-group w-100">
+					<input type="text"  id="txt_buscar" onkeyup="Filtrar()"  placeholder="Buscar.." class="form-control"  aria-label="Search" aria-describedby="basic-addon2">
+		          	<div class="input-group-append">
+		            	<button class="btn btn-outline-warning" type="button" onclick="Confirmar('mensaje!!!')"><i class="fas fa-search"></i></button>
+		          	</div>
+		        </div>
+		    </div>
+
+		    <div class="col-1"> <!--  -->
+				<span class="float-right">
+			          <img src="img/ico.png" class="rounded-circle  animated infinite tada" style="height: 40px; width: 40px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">          
+			          
+			            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1407px, 40px, 0px);">
+			                  <div class="card" style="height: 310px; width: 200px; margin: 3px;">
+			                      <h5 class="card-title"><strong>Administrador</strong></h5>
+			                      <img src="img/canvia.png" class="w-100 img-thumbnail" style="height: 150px; width: 150px;">
+
+			                      <div class="card-body">
+			                      	<h5 class="card-title">Geral R Cotrina</h5>
+
+
+							        <div class="input-group m-1">
+										<input type="text" class="form-control" value="Operacot"/>
+							          	<div class="input-group-append">
+							          		<a  href="#" class="btn btn-outline-secondary">
+					                          <i class="fas fa-user-tie"></i>
+					                        </a> <!--button class="btn btn-outline-secondary" type="button"><i class="fas fa-user"></i></button-->
+							          	</div>
+							        </div>
+
+
+
+							        <div class="input-group m-1">
+							          	<input type="password" class="form-control"  id = "password" value="4rt1st4">
+										<div class="input-group-append">
+											<a  href="#" onclick="SeePassword()" class="btn btn-outline-secondary">
+					                          <i id="eye-password" class="fas fa-eye"></i><!--i class="fas fa-user-tie"></i-->
+					                        </a>  <!--button class="btn btn-outline-secondary" type="button"><i class="fas fa-unlock-alt"></i></button-->
+							          	</div>
+							        </div>
+
+			                        <a href="mantenedor.html" class="btn con_fondo form-control">INGRESAR</a>
+			                      </div>
+			                  </div>   
+			            </div>
+		          </span>				
+		    </div>
+
+		 </div>
+
+
+
+			
+
+		<div class="row w-100">
+
+			<div class="col-8 mx-auto h-100">
+				<p class="alert alert-success alert-dismissable font-italic text-center">   <!-- alerta inormativa-->
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					<i class="fas fa-exclamation-triangle text-warning"></i>
+					Usted pede filtrar por  <strong>PROYECTO, JEFE o CELULAR</strong> y al dar click sobre el dato 
+					se quedará copiado en el portapapéles  <i class="far fa-clone"></i>, los botones de la derecha seran 
+					implementados con funcionalidades que faciliten el trabajo del operador.
+				</p>
+			</div>
+			
+			<div class="col-4 mx-auto h-100">
+				<p class="alert alert-warning alert-dismissable font-italic text-center">   <!-- alerta inormativa-->
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					<i class="fab fa-cloudversify text-warning"  style="font-size: 1.8em;"></i>
+					Actualizado:   <strong>06/06/2019 <br> 11:48 a.m.</strong>
+				</p>
+			</div>
+ 
+			<div class="col-12 mx-auto mb-2 w-100">
+				<table class="table-striped text-center" style="width: 100%;">
+					<thead>
+						<tr style="font-weight: bold;" class="con_fondo"> <!--  background: #E8A146 -->
+						
+							<td>#</td>
+							<td>ALP_<i class="fas fa-project-diagram"></i></td>
+							<td>PROYECTO_<i class="fas fa-signature"></i></td><td>-</td>
+							<td>JEFE DEL PROYECTO_<i class="fas fa-user-tag"></i></td><td>-</td>
+							<td>MÓVIL_<i class="fas fa-phone-square"></i></td><td>-</td>
+							<td>TODO <i class="far fa-clone"></i></td>
+						</tr>
+					</thead>
+					
+					<tbody  id="tabla1" >
+					</tbody>
+				</table>
+			</div>
+
+	</div>
+
+
+<script language=javascript type="text/javascript" src="js/fil.js"></script>
+<script language=javascript type="text/javascript" src="js/copy.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
