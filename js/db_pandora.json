@@ -1,0 +1,232 @@
+var Lista;
+Lista_pandora = [
+{ 
+	"Lista1": [
+    [
+      "1",
+      "AVSPORTALWEB01",
+      "172.27.4.70",
+      "Siempre Apagado",
+      "23:58",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "2",
+      "AvsPrdAD001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "3",
+      "AvsPrdADCon01",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "4",
+      "AvsPrdApp001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "5",
+      "AvsPrdBckServer",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "6",
+      "AvsPrdDB001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "7",
+      "AvsPrdWeb001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "AVANSYS"
+    ],
+    [
+      "8",
+      "fsazure",
+      "172.27.9.20",
+      "Diario",
+      "8:00",
+      "22:00",
+      "COMERCIO"
+    ],
+    [
+      "9",
+      "dgbdprod01",
+      "172.27.8.37",
+      "Diario",
+      "8:00",
+      "22:00",
+      "COMERCIO"
+    ],
+    [
+      "10",
+      "devapp01",
+      "172.27.8.4",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "11",
+      "devweb01",
+      "172.27.8.52",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "12",
+      "PREAPP02",
+      "172.27.8.20 172.27.8.26",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "13",
+      "PREAPP03",
+      "172.27.8.23",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "14",
+      "preweb02",
+      "172.27.8.5",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "15",
+      "PREWEB03",
+      "172.27.8.10",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "16",
+      "SERVERSQL1",
+      "172.27.9.21",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "17",
+      "TFSPROD",
+      "172.27.8.24",
+      "Lunes a Viernes",
+      "9:00",
+      "21:00",
+      "COMERCIO"
+    ],
+    [
+      "18",
+      "Appaplisbc001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "COMERCIO"
+    ],
+    [
+      "19",
+      "APPBDSVC001",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "COMERCIO"
+    ],
+    [
+      "20",
+      "PRESTMARTDC01",
+      "-",
+      "Siempre Apagado",
+      "23:58",
+      "23:59",
+      "COMERCIO"
+    ],
+    [
+      "21",
+      "serverdc01",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "COMERCIO"
+    ],
+    [
+      "22",
+      "serversql02",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "COMERCIO"
+    ],
+    [
+      "23",
+      "QV-DEV",
+      "-",
+      "Lunes a Viernes",
+      "8:00",
+      "20:00",
+      "QLIKVIEW"
+    ],
+    [
+      "24",
+      "QLIKSENSE",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "QLIKVIEW"
+    ],
+    [
+      "25",
+      "QV-TEST",
+      "-",
+      "Siempre Encendido",
+      "0:00",
+      "23:59",
+      "QLIKVIEW"
+    ]
+  ]
+}
+]

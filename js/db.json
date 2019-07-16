@@ -212,12 +212,21 @@ Lista = [
       "GARCIA VILLALTA MILAGRITOS",
       "981959391"
     ],
+	/*
     [
       "31",
-      "100027",
+      "100227",
       "PROY__CLOUD-UNIBANCA-COT",
       "INGA PEREZ JOSE ANTONIO",
       "949508589"
+    ],
+	*/
+	[
+      "31",
+      "100227",
+      "DIST__ISO-GMD-COT1",
+      "Guillermo Lindo Melendez",
+      "954695557"
     ],
     [
       "32",
@@ -526,6 +535,13 @@ Lista = [
       "PROY__CLOUD-CAM PERU-SERVICIO DE CLOUD",
       "ZUÑIGA ANTICONA BIBI MALU",
       "942952415"
+    ],
+    [
+      "76",
+      "100260",
+      "DIST__ISO-GMD-COT4",
+      "Sergio Comettant Cieza",
+      "900000000"
     ]
   ]
 }

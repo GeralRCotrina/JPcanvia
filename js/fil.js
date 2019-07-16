@@ -61,6 +61,8 @@ function Cargarlista(){
 }
 
 
+
+
 function SeePassword(){
 	var eye = document.getElementById("eye-password");
 	var passw = document.getElementById("password");
@@ -76,3 +78,5 @@ function SeePassword(){
 		passw.type = "password";
 	}
 }
+
+
