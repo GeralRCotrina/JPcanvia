@@ -34,7 +34,13 @@ function Filtrar() {
 
 var tb=document.getElementById("tabla2");
 
+
+var cont_p = 0;
+
+
+
 function Recargar(){
+	cont_p = 120;
 	tb.innerHTML="";
 	Cargarlista(); 
 	setTimeout("Recargar()",120000);
@@ -66,12 +72,11 @@ function Cargarlista(){
 			var dl = new Date();
 
 			if(subB[3] =="Lunes a Viernes"){
-
 				if(dl.getDay() == 0 || dl.getDay() == 6){
 					fila += '<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
 							'<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
 				}else{
-					if ((dt.getHours() < dl.getHours()) && (dtl.getHours() > dl.getHours())) {
+					if ((dl.getHours()>=dt.getHours()) && (dl.getHours() < dtl.getHours())) {
 						fila += '<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white"  onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
 								'<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
 					}else{
@@ -80,15 +85,26 @@ function Cargarlista(){
 					}
 				}
 			}
-			else{
-				if ((dt.getHours() < dl.getHours()) && (dtl.getHours() > dl.getHours())) {
+			else if(subB[3] =="Siempre Encendido"){
+				fila += '<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white"  onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
+						'<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
+				
+			}else if(subB[3] =="Siempre Apagado"){
+				fila += '<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
+						'<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
+			}else if(subB[3] == "Diario"){
+				if ((dl.getHours()>=dt.getHours()) && (dl.getHours() < dtl.getHours()))
+				{
 					fila += '<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white"  onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
 							'<td style="background: rgba(253, 99, 66, 0.5);"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-white" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
 				}else{
 					fila += '<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[4]+'</a></td><td></td>'+
 							'<td><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[5]+'</a></td><td></td>';
 				}
+			}else{
+				console.log("err 1");
 			}
+			
 			fila +='<td style="font-size:0.9em"><a href="#" id="6000'+subB[0]+subB[1]+'" class="text-dark" onclick="Copiar(6000'+subB[0]+subB[1]+')">'+subB[6]+'</a></td><td></td></tr>';
 
 		var tr = document.createElement("TR");
@@ -104,7 +120,44 @@ function Cargarlista(){
 
 
 
+
+
 function mostrarhora(){ 
+
+	cont_p -= 1;
+	var d1 = 0;
+	var m_d1 = 0;
+
+	var progress = document.getElementById("progres");
+
+	if(cont_p > 90 ){
+		d1 = 25;
+		m_d1= 120;
+	}else if(cont_p > 60 ){
+		d1 = 50;
+		m_d1= 60;
+	}else if(cont_p > 30 ){
+		d1 = 75;
+		m_d1= 30;
+	}else if(cont_p > 10 ){
+		d1 = 100;
+		m_d1= 10;
+	}else{
+		console.log("> falló el progress");
+	}
+
+	progress.classList.remove("h-100");
+	progress.classList.remove("h-75");
+	progress.classList.remove("h-50");
+	progress.classList.remove("h-25");
+	progress.classList.remove("h-0");
+
+	progress.classList.add("h-"+d1);
+	progress.innerHTML=""+m_d1;
+
+
+
+
 
 	var tt = document.getElementById("timer");
 	var f=new Date();
